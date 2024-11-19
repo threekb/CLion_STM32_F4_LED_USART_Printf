@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CLion_STM32_led.elf" type="com.jetbrains.cidr.embedded.customgdbserver.type" factoryName="com.jetbrains.cidr.embedded.customgdbserver.factory" singleton="false" nameIsGenerated="true" PROGRAM_PARAMS="-f interface/cmsis-dap.cfg -f target/stm32f4x.cfg" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CLion_STM32_led" TARGET_NAME="CLion_STM32_led.elf" CONFIG_NAME="Debug-MinGW_STM32" version="1" RUN_TARGET_PROJECT_NAME="CLion_STM32_led" RUN_TARGET_NAME="CLion_STM32_led.elf">
+    <custom-gdb-server version="1" gdb-connect="localhost:3333" executable="D:\msys64\mingw64\bin\openocd.exe" warmup-ms="0" download-type="UPDATED_ONLY" reset-cmd="monitor reset" reset-type="AFTER_DOWNLOAD" connection-mode="REMOTE" gdbserver-enable="true" console-enabled="false" console-port="0">
+      <debugger kind="GDB" isBundled="true" />
+      <extra-debugger-params debugger-working-dir="" debugger-env-pass-parent="true" custom-script="" />
+    </custom-gdb-server>
+    <method v="2">
+      <option name="CLION.COMPOUND.BUILD" enabled="true" />
+    </method>
+  </configuration>
+</component>

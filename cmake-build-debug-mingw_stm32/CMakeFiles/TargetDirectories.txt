@@ -1,0 +1,3 @@
+C:/Users/Admin/Desktop/CLion_STM32_led/cmake-build-debug-mingw_stm32/CMakeFiles/CLion_STM32_led.elf.dir
+C:/Users/Admin/Desktop/CLion_STM32_led/cmake-build-debug-mingw_stm32/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/CLion_STM32_led/cmake-build-debug-mingw_stm32/CMakeFiles/rebuild_cache.dir
