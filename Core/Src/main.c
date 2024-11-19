@@ -100,10 +100,10 @@ int main(void)
     for(uint16_t i = 0; i < len; i++) {
       HAL_GPIO_WritePin(led_GPIO_Port, led_Pin, GPIO_PIN_RESET);
       printf("led is on No.%d times\r\n", i);
-      HAL_Delay(500);
+      HAL_Delay(200);
       HAL_GPIO_WritePin(led_GPIO_Port, led_Pin, GPIO_PIN_SET);
       printf("led is off No.%d times\r\n", i);
-      HAL_Delay(1000);
+      HAL_Delay(50);
     }
 
     /* USER CODE END WHILE */
