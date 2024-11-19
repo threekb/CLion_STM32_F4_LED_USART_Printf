@@ -98,9 +98,12 @@ int main(void)
   {
     const uint16_t len = 1000;
     for(uint16_t i = 0; i < len; i++) {
-      HAL_GPIO_TogglePin(led_GPIO_Port, led_Pin);
+      HAL_GPIO_WritePin(led_GPIO_Port, led_Pin, GPIO_PIN_RESET);
+      printf("led is on No.%d times\r\n", i);
+      HAL_Delay(500);
+      HAL_GPIO_WritePin(led_GPIO_Port, led_Pin, GPIO_PIN_SET);
+      printf("led is off No.%d times\r\n", i);
       HAL_Delay(1000);
-      printf("This is NO. %d times\r\n", i);
     }
 
     /* USER CODE END WHILE */

@@ -545,6 +545,8 @@ Discarded input sections
                 0x00000000      0x134 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .text.HAL_GPIO_ReadPin
                 0x00000000        0xe CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .text.HAL_GPIO_TogglePin
+                0x00000000       0x12 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .text.HAL_GPIO_LockPin
                 0x00000000       0x2e CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
  .text.HAL_GPIO_EXTI_Callback
@@ -1330,7 +1332,7 @@ LOAD E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/.
                 0x08000000                g_pfnVectors
                 0x08000188                        . = ALIGN (0x4)
 
-.text           0x080001c0     0x7edc
+.text           0x080001c0     0x7ee4
                 0x080001c0                        . = ALIGN (0x4)
  *(.text)
  .text          0x080001c0       0x30 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
@@ -1407,556 +1409,550 @@ LOAD E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/.
  .text.SystemClock_Config
                 0x08000f08       0xa4 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
                 0x08000f08                SystemClock_Config
- .text.main     0x08000fac       0x44 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
+ .text.main     0x08000fac       0x64 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
                 0x08000fac                main
  .text.HAL_MspInit
-                0x08000ff0       0x38 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08000ff0                HAL_MspInit
+                0x08001010       0x38 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08001010                HAL_MspInit
  .text.NMI_Handler
-                0x08001028        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001028                NMI_Handler
+                0x08001048        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001048                NMI_Handler
  .text.HardFault_Handler
-                0x0800102a        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800102a                HardFault_Handler
+                0x0800104a        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800104a                HardFault_Handler
  .text.MemManage_Handler
-                0x0800102c        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800102c                MemManage_Handler
+                0x0800104c        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800104c                MemManage_Handler
  .text.BusFault_Handler
-                0x0800102e        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x0800102e                BusFault_Handler
+                0x0800104e        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x0800104e                BusFault_Handler
  .text.UsageFault_Handler
-                0x08001030        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001030                UsageFault_Handler
+                0x08001050        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001050                UsageFault_Handler
  .text.SVC_Handler
-                0x08001032        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001032                SVC_Handler
+                0x08001052        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001052                SVC_Handler
  .text.DebugMon_Handler
-                0x08001034        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001034                DebugMon_Handler
+                0x08001054        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001054                DebugMon_Handler
  .text.PendSV_Handler
-                0x08001036        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001036                PendSV_Handler
+                0x08001056        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001056                PendSV_Handler
  .text.SysTick_Handler
-                0x08001038        0x8 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08001038                SysTick_Handler
- .text._getpid  0x08001040        0x4 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
-                0x08001040                _getpid
- .text._kill    0x08001044       0x10 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
-                0x08001044                _kill
- .text._exit    0x08001054        0xc CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
-                0x08001054                _exit
- .text._read    0x08001060       0x20 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
-                0x08001060                _read
- .text._close   0x08001080        0x6 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
-                0x08001080                _close
- .text._fstat   0x08001086        0xa CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
-                0x08001086                _fstat
- .text._isatty  0x08001090        0x4 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
-                0x08001090                _isatty
- .text._lseek   0x08001094        0x4 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
-                0x08001094                _lseek
- .text._sbrk    0x08001098       0x48 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/sysmem.c.obj
-                0x08001098                _sbrk
+                0x08001058        0x8 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08001058                SysTick_Handler
+ .text._getpid  0x08001060        0x4 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+                0x08001060                _getpid
+ .text._kill    0x08001064       0x10 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+                0x08001064                _kill
+ .text._exit    0x08001074        0xc CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+                0x08001074                _exit
+ .text._read    0x08001080       0x20 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+                0x08001080                _read
+ .text._close   0x080010a0        0x6 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+                0x080010a0                _close
+ .text._fstat   0x080010a6        0xa CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+                0x080010a6                _fstat
+ .text._isatty  0x080010b0        0x4 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+                0x080010b0                _isatty
+ .text._lseek   0x080010b4        0x4 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+                0x080010b4                _lseek
+ .text._sbrk    0x080010b8       0x48 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/sysmem.c.obj
+                0x080010b8                _sbrk
  .text.SystemInit
-                0x080010e0        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
-                0x080010e0                SystemInit
- *fill*         0x080010e2        0x2 
+                0x08001100        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
+                0x08001100                SystemInit
+ *fill*         0x08001102        0x2 
  .text.MX_USART1_UART_Init
-                0x080010e4       0x34 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
-                0x080010e4                MX_USART1_UART_Init
+                0x08001104       0x34 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
+                0x08001104                MX_USART1_UART_Init
  .text.HAL_UART_MspInit
-                0x08001118       0x74 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
-                0x08001118                HAL_UART_MspInit
- .text._write   0x0800118c       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
-                0x0800118c                _write
+                0x08001138       0x74 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
+                0x08001138                HAL_UART_MspInit
+ .text._write   0x080011ac       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
+                0x080011ac                _write
  .text.Reset_Handler
-                0x080011b4       0x50 CMakeFiles/CLion_STM32_led.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
-                0x080011b4                Reset_Handler
+                0x080011d4       0x50 CMakeFiles/CLion_STM32_led.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
+                0x080011d4                Reset_Handler
  .text.Default_Handler
-                0x08001204        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
-                0x08001204                RTC_Alarm_IRQHandler
-                0x08001204                HASH_RNG_IRQHandler
-                0x08001204                EXTI2_IRQHandler
-                0x08001204                TIM8_CC_IRQHandler
-                0x08001204                TIM1_CC_IRQHandler
-                0x08001204                DMA2_Stream5_IRQHandler
-                0x08001204                DMA1_Stream5_IRQHandler
-                0x08001204                PVD_IRQHandler
-                0x08001204                SDIO_IRQHandler
-                0x08001204                TAMP_STAMP_IRQHandler
-                0x08001204                CAN2_RX1_IRQHandler
-                0x08001204                EXTI3_IRQHandler
-                0x08001204                TIM8_TRG_COM_TIM14_IRQHandler
-                0x08001204                TIM1_UP_TIM10_IRQHandler
-                0x08001204                TIM8_UP_TIM13_IRQHandler
-                0x08001204                I2C3_ER_IRQHandler
-                0x08001204                EXTI0_IRQHandler
-                0x08001204                I2C2_EV_IRQHandler
-                0x08001204                DMA1_Stream2_IRQHandler
-                0x08001204                CAN1_RX0_IRQHandler
-                0x08001204                FPU_IRQHandler
-                0x08001204                OTG_HS_WKUP_IRQHandler
-                0x08001204                CAN2_SCE_IRQHandler
-                0x08001204                DMA2_Stream2_IRQHandler
-                0x08001204                SPI1_IRQHandler
-                0x08001204                TIM6_DAC_IRQHandler
-                0x08001204                TIM1_BRK_TIM9_IRQHandler
-                0x08001204                DCMI_IRQHandler
-                0x08001204                CAN2_RX0_IRQHandler
-                0x08001204                DMA2_Stream3_IRQHandler
-                0x08001204                USART6_IRQHandler
-                0x08001204                USART3_IRQHandler
-                0x08001204                CAN1_RX1_IRQHandler
-                0x08001204                UART5_IRQHandler
-                0x08001204                DMA2_Stream0_IRQHandler
-                0x08001204                TIM4_IRQHandler
-                0x08001204                I2C1_EV_IRQHandler
-                0x08001204                DMA1_Stream6_IRQHandler
-                0x08001204                DMA1_Stream1_IRQHandler
-                0x08001204                UART4_IRQHandler
-                0x08001204                TIM3_IRQHandler
-                0x08001204                RCC_IRQHandler
-                0x08001204                TIM8_BRK_TIM12_IRQHandler
-                0x08001204                Default_Handler
-                0x08001204                EXTI15_10_IRQHandler
-                0x08001204                ADC_IRQHandler
-                0x08001204                DMA1_Stream7_IRQHandler
-                0x08001204                TIM7_IRQHandler
-                0x08001204                CAN2_TX_IRQHandler
-                0x08001204                TIM5_IRQHandler
-                0x08001204                DMA2_Stream7_IRQHandler
-                0x08001204                I2C3_EV_IRQHandler
-                0x08001204                EXTI9_5_IRQHandler
-                0x08001204                RTC_WKUP_IRQHandler
-                0x08001204                ETH_WKUP_IRQHandler
-                0x08001204                SPI2_IRQHandler
-                0x08001204                OTG_HS_EP1_IN_IRQHandler
-                0x08001204                DMA1_Stream0_IRQHandler
-                0x08001204                CAN1_TX_IRQHandler
-                0x08001204                EXTI4_IRQHandler
-                0x08001204                FSMC_IRQHandler
-                0x08001204                ETH_IRQHandler
-                0x08001204                OTG_HS_EP1_OUT_IRQHandler
-                0x08001204                WWDG_IRQHandler
-                0x08001204                TIM2_IRQHandler
-                0x08001204                OTG_FS_WKUP_IRQHandler
-                0x08001204                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08001204                OTG_HS_IRQHandler
-                0x08001204                EXTI1_IRQHandler
-                0x08001204                USART2_IRQHandler
-                0x08001204                I2C2_ER_IRQHandler
-                0x08001204                DMA2_Stream1_IRQHandler
-                0x08001204                CAN1_SCE_IRQHandler
-                0x08001204                FLASH_IRQHandler
-                0x08001204                DMA2_Stream4_IRQHandler
-                0x08001204                USART1_IRQHandler
-                0x08001204                OTG_FS_IRQHandler
-                0x08001204                SPI3_IRQHandler
-                0x08001204                DMA1_Stream4_IRQHandler
-                0x08001204                I2C1_ER_IRQHandler
-                0x08001204                DMA2_Stream6_IRQHandler
-                0x08001204                DMA1_Stream3_IRQHandler
- *fill*         0x08001206        0x2 
+                0x08001224        0x2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
+                0x08001224                RTC_Alarm_IRQHandler
+                0x08001224                HASH_RNG_IRQHandler
+                0x08001224                EXTI2_IRQHandler
+                0x08001224                TIM8_CC_IRQHandler
+                0x08001224                TIM1_CC_IRQHandler
+                0x08001224                DMA2_Stream5_IRQHandler
+                0x08001224                DMA1_Stream5_IRQHandler
+                0x08001224                PVD_IRQHandler
+                0x08001224                SDIO_IRQHandler
+                0x08001224                TAMP_STAMP_IRQHandler
+                0x08001224                CAN2_RX1_IRQHandler
+                0x08001224                EXTI3_IRQHandler
+                0x08001224                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08001224                TIM1_UP_TIM10_IRQHandler
+                0x08001224                TIM8_UP_TIM13_IRQHandler
+                0x08001224                I2C3_ER_IRQHandler
+                0x08001224                EXTI0_IRQHandler
+                0x08001224                I2C2_EV_IRQHandler
+                0x08001224                DMA1_Stream2_IRQHandler
+                0x08001224                CAN1_RX0_IRQHandler
+                0x08001224                FPU_IRQHandler
+                0x08001224                OTG_HS_WKUP_IRQHandler
+                0x08001224                CAN2_SCE_IRQHandler
+                0x08001224                DMA2_Stream2_IRQHandler
+                0x08001224                SPI1_IRQHandler
+                0x08001224                TIM6_DAC_IRQHandler
+                0x08001224                TIM1_BRK_TIM9_IRQHandler
+                0x08001224                DCMI_IRQHandler
+                0x08001224                CAN2_RX0_IRQHandler
+                0x08001224                DMA2_Stream3_IRQHandler
+                0x08001224                USART6_IRQHandler
+                0x08001224                USART3_IRQHandler
+                0x08001224                CAN1_RX1_IRQHandler
+                0x08001224                UART5_IRQHandler
+                0x08001224                DMA2_Stream0_IRQHandler
+                0x08001224                TIM4_IRQHandler
+                0x08001224                I2C1_EV_IRQHandler
+                0x08001224                DMA1_Stream6_IRQHandler
+                0x08001224                DMA1_Stream1_IRQHandler
+                0x08001224                UART4_IRQHandler
+                0x08001224                TIM3_IRQHandler
+                0x08001224                RCC_IRQHandler
+                0x08001224                TIM8_BRK_TIM12_IRQHandler
+                0x08001224                Default_Handler
+                0x08001224                EXTI15_10_IRQHandler
+                0x08001224                ADC_IRQHandler
+                0x08001224                DMA1_Stream7_IRQHandler
+                0x08001224                TIM7_IRQHandler
+                0x08001224                CAN2_TX_IRQHandler
+                0x08001224                TIM5_IRQHandler
+                0x08001224                DMA2_Stream7_IRQHandler
+                0x08001224                I2C3_EV_IRQHandler
+                0x08001224                EXTI9_5_IRQHandler
+                0x08001224                RTC_WKUP_IRQHandler
+                0x08001224                ETH_WKUP_IRQHandler
+                0x08001224                SPI2_IRQHandler
+                0x08001224                OTG_HS_EP1_IN_IRQHandler
+                0x08001224                DMA1_Stream0_IRQHandler
+                0x08001224                CAN1_TX_IRQHandler
+                0x08001224                EXTI4_IRQHandler
+                0x08001224                FSMC_IRQHandler
+                0x08001224                ETH_IRQHandler
+                0x08001224                OTG_HS_EP1_OUT_IRQHandler
+                0x08001224                WWDG_IRQHandler
+                0x08001224                TIM2_IRQHandler
+                0x08001224                OTG_FS_WKUP_IRQHandler
+                0x08001224                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08001224                OTG_HS_IRQHandler
+                0x08001224                EXTI1_IRQHandler
+                0x08001224                USART2_IRQHandler
+                0x08001224                I2C2_ER_IRQHandler
+                0x08001224                DMA2_Stream1_IRQHandler
+                0x08001224                CAN1_SCE_IRQHandler
+                0x08001224                FLASH_IRQHandler
+                0x08001224                DMA2_Stream4_IRQHandler
+                0x08001224                USART1_IRQHandler
+                0x08001224                OTG_FS_IRQHandler
+                0x08001224                SPI3_IRQHandler
+                0x08001224                DMA1_Stream4_IRQHandler
+                0x08001224                I2C1_ER_IRQHandler
+                0x08001224                DMA2_Stream6_IRQHandler
+                0x08001224                DMA1_Stream3_IRQHandler
+ *fill*         0x08001226        0x2 
  .text.HAL_InitTick
-                0x08001208       0x4c CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08001208                HAL_InitTick
+                0x08001228       0x4c CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08001228                HAL_InitTick
  .text.HAL_Init
-                0x08001254       0x34 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08001254                HAL_Init
+                0x08001274       0x34 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08001274                HAL_Init
  .text.HAL_IncTick
-                0x08001288       0x18 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08001288                HAL_IncTick
+                0x080012a8       0x18 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x080012a8                HAL_IncTick
  .text.HAL_GetTick
-                0x080012a0        0xc CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x080012a0                HAL_GetTick
+                0x080012c0        0xc CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x080012c0                HAL_GetTick
  .text.HAL_Delay
-                0x080012ac       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x080012ac                HAL_Delay
+                0x080012cc       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x080012cc                HAL_Delay
  .text.__NVIC_SetPriority
-                0x080012d4       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080012f4       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x080012fc       0x3e CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- *fill*         0x0800133a        0x2 
+                0x0800131c       0x3e CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ *fill*         0x0800135a        0x2 
  .text.HAL_NVIC_SetPriorityGrouping
-                0x0800133c       0x24 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x0800133c                HAL_NVIC_SetPriorityGrouping
+                0x0800135c       0x24 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0800135c                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08001360       0x20 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08001360                HAL_NVIC_SetPriority
+                0x08001380       0x20 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08001380                HAL_NVIC_SetPriority
  .text.HAL_SYSTICK_Config
-                0x08001380       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08001380                HAL_SYSTICK_Config
+                0x080013a0       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080013a0                HAL_SYSTICK_Config
  .text.HAL_GPIO_Init
-                0x080013a8      0x1f4 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x080013a8                HAL_GPIO_Init
+                0x080013c8      0x1f4 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x080013c8                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x0800159c        0xc CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x0800159c                HAL_GPIO_WritePin
- .text.HAL_GPIO_TogglePin
-                0x080015a8       0x12 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x080015a8                HAL_GPIO_TogglePin
- *fill*         0x080015ba        0x2 
+                0x080015bc        0xc CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x080015bc                HAL_GPIO_WritePin
  .text.HAL_RCC_OscConfig
-                0x080015bc      0x3f8 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x080015bc                HAL_RCC_OscConfig
+                0x080015c8      0x3f8 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x080015c8                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x080019b4       0xdc CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x080019b4                HAL_RCC_GetSysClockFreq
+                0x080019c0       0xdc CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x080019c0                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x08001a90      0x160 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001a90                HAL_RCC_ClockConfig
+                0x08001a9c      0x160 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001a9c                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x08001bf0        0xc CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001bf0                HAL_RCC_GetHCLKFreq
+                0x08001bfc        0xc CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001bfc                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08001bfc       0x20 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001bfc                HAL_RCC_GetPCLK1Freq
+                0x08001c08       0x20 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001c08                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08001c1c       0x20 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001c1c                HAL_RCC_GetPCLK2Freq
+                0x08001c28       0x20 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001c28                HAL_RCC_GetPCLK2Freq
  .text.UART_SetConfig
-                0x08001c3c      0x110 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08001c48      0x110 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.HAL_UART_Init
-                0x08001d4c       0x60 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08001d4c                HAL_UART_Init
+                0x08001d58       0x60 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08001d58                HAL_UART_Init
  .text.__udivmoddi4
-                0x08001dac      0x2bc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x08001dac                __udivmoddi4
+                0x08001db8      0x2bc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x08001db8                __udivmoddi4
  .text.stdio_exit_handler
-                0x08002068       0x18 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
+                0x08002074       0x18 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
  .text.cleanup_stdio
-                0x08002080       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
+                0x0800208c       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
  .text.global_stdio_init.part.0
-                0x080020c0       0xf0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
- .text.__sinit  0x080021b0       0x3c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
-                0x080021b0                __sinit
+                0x080020cc       0xf0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
+ .text.__sinit  0x080021bc       0x3c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
+                0x080021bc                __sinit
  .text.__sfp_lock_acquire
-                0x080021ec        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
-                0x080021ec                __sfp_lock_acquire
- .text.__sfp_lock_release
                 0x080021f8        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
-                0x080021f8                __sfp_lock_release
+                0x080021f8                __sfp_lock_acquire
+ .text.__sfp_lock_release
+                0x08002204        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
+                0x08002204                __sfp_lock_release
  .text._fwalk_sglue
-                0x08002204       0x44 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fwalk.o)
-                0x08002204                _fwalk_sglue
- .text.printf   0x08002248       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-printf.o)
-                0x08002248                printf
- .text.__sread  0x08002270       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-stdio.o)
-                0x08002270                __sread
+                0x08002210       0x44 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fwalk.o)
+                0x08002210                _fwalk_sglue
+ .text.printf   0x08002254       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-printf.o)
+                0x08002254                printf
+ .text.__sread  0x0800227c       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-stdio.o)
+                0x0800227c                __sread
  .text.__swrite
-                0x08002294       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-stdio.o)
-                0x08002294                __swrite
- .text.__sseek  0x080022d4       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-stdio.o)
-                0x080022d4                __sseek
+                0x080022a0       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-stdio.o)
+                0x080022a0                __swrite
+ .text.__sseek  0x080022e0       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-stdio.o)
+                0x080022e0                __sseek
  .text.__sclose
-                0x080022f8        0x8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-stdio.o)
-                0x080022f8                __sclose
- .text.memset   0x08002300       0xa4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memset.o)
-                0x08002300                memset
+                0x08002304        0x8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-stdio.o)
+                0x08002304                __sclose
+ .text.memset   0x0800230c       0xa4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memset.o)
+                0x0800230c                memset
  .text._close_r
-                0x080023a4       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-closer.o)
-                0x080023a4                _close_r
+                0x080023b0       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-closer.o)
+                0x080023b0                _close_r
  .text._lseek_r
-                0x080023c8       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lseekr.o)
-                0x080023c8                _lseek_r
- .text._read_r  0x080023f4       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-readr.o)
-                0x080023f4                _read_r
+                0x080023d4       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lseekr.o)
+                0x080023d4                _lseek_r
+ .text._read_r  0x08002400       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-readr.o)
+                0x08002400                _read_r
  .text._write_r
-                0x08002420       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-writer.o)
-                0x08002420                _write_r
- .text.__errno  0x0800244c        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-errno.o)
-                0x0800244c                __errno
+                0x0800242c       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-writer.o)
+                0x0800242c                _write_r
+ .text.__errno  0x08002458        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-errno.o)
+                0x08002458                __errno
  .text.__libc_init_array
-                0x08002458       0x50 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-init.o)
-                0x08002458                __libc_init_array
+                0x08002464       0x50 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-init.o)
+                0x08002464                __libc_init_array
  .text.__retarget_lock_init_recursive
-                0x080024a8        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
-                0x080024a8                __retarget_lock_init_recursive
- .text.__retarget_lock_close_recursive
-                0x080024ac        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
-                0x080024ac                __retarget_lock_close_recursive
- .text.__retarget_lock_acquire_recursive
-                0x080024b0        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
-                0x080024b0                __retarget_lock_acquire_recursive
- .text.__retarget_lock_release_recursive
                 0x080024b4        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
-                0x080024b4                __retarget_lock_release_recursive
+                0x080024b4                __retarget_lock_init_recursive
+ .text.__retarget_lock_close_recursive
+                0x080024b8        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
+                0x080024b8                __retarget_lock_close_recursive
+ .text.__retarget_lock_acquire_recursive
+                0x080024bc        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
+                0x080024bc                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_release_recursive
+                0x080024c0        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
+                0x080024c0                __retarget_lock_release_recursive
  .text.startup.register_fini
-                0x080024b8       0x14 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
- .text.atexit   0x080024cc        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-atexit.o)
-                0x080024cc                atexit
+                0x080024c4       0x14 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .text.atexit   0x080024d8        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-atexit.o)
+                0x080024d8                atexit
  .text._malloc_trim_r
-                0x080024d8       0xb8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-freer.o)
-                0x080024d8                _malloc_trim_r
- .text._free_r  0x08002590      0x1f8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-freer.o)
-                0x08002590                _free_r
+                0x080024e4       0xb8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-freer.o)
+                0x080024e4                _malloc_trim_r
+ .text._free_r  0x0800259c      0x1f8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-freer.o)
+                0x0800259c                _free_r
  .text._malloc_r
-                0x08002788      0x564 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mallocr.o)
-                0x08002788                _malloc_r
+                0x08002794      0x564 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mallocr.o)
+                0x08002794                _malloc_r
  .text.__malloc_lock
-                0x08002cec        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mlock.o)
-                0x08002cec                __malloc_lock
- .text.__malloc_unlock
                 0x08002cf8        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mlock.o)
-                0x08002cf8                __malloc_unlock
+                0x08002cf8                __malloc_lock
+ .text.__malloc_unlock
+                0x08002d04        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mlock.o)
+                0x08002d04                __malloc_unlock
  .text._vfprintf_r
-                0x08002d04     0x1c5c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
-                0x08002d04                _vfprintf_r
+                0x08002d10     0x1c5c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
+                0x08002d10                _vfprintf_r
  .text.__sbprintf
-                0x08004960       0x80 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
+                0x0800496c       0x80 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
  .text.__sprint_r
-                0x080049e0       0x20 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sprint_r.o)
-                0x080049e0                __sprint_r
+                0x080049ec       0x20 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sprint_r.o)
+                0x080049ec                __sprint_r
  .text._fclose_r
-                0x08004a00       0xc0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fclose.o)
-                0x08004a00                _fclose_r
+                0x08004a0c       0xc0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fclose.o)
+                0x08004a0c                _fclose_r
  .text.__sflush_r
-                0x08004ac0      0x128 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fflush.o)
-                0x08004ac0                __sflush_r
+                0x08004acc      0x128 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fflush.o)
+                0x08004acc                __sflush_r
  .text._fflush_r
-                0x08004be8       0x54 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fflush.o)
-                0x08004be8                _fflush_r
+                0x08004bf4       0x54 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fflush.o)
+                0x08004bf4                _fflush_r
  .text.__sfvwrite_r
-                0x08004c3c      0x2f8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fvwrite.o)
-                0x08004c3c                __sfvwrite_r
+                0x08004c48      0x2f8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fvwrite.o)
+                0x08004c48                __sfvwrite_r
  .text.__swsetup_r
-                0x08004f34       0xc4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wsetup.o)
-                0x08004f34                __swsetup_r
- .text.memmove  0x08004ff8      0x100 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memmove.o)
-                0x08004ff8                memmove
- .text.strncpy  0x080050f8       0x68 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-strncpy.o)
-                0x080050f8                strncpy
+                0x08004f40       0xc4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wsetup.o)
+                0x08004f40                __swsetup_r
+ .text.memmove  0x08005004      0x100 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memmove.o)
+                0x08005004                memmove
+ .text.strncpy  0x08005104       0x68 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-strncpy.o)
+                0x08005104                strncpy
  .text.__locale_mb_cur_max
-                0x08005160        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-locale.o)
-                0x08005160                __locale_mb_cur_max
+                0x0800516c        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-locale.o)
+                0x0800516c                __locale_mb_cur_max
  .text._localeconv_r
-                0x0800516c        0x8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-localeconv.o)
-                0x0800516c                _localeconv_r
- .text._sbrk_r  0x08005174       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sbrkr.o)
-                0x08005174                _sbrk_r
+                0x08005178        0x8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-localeconv.o)
+                0x08005178                _localeconv_r
+ .text._sbrk_r  0x08005180       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sbrkr.o)
+                0x08005180                _sbrk_r
  .text.__libc_fini_array
-                0x08005198       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fini.o)
-                0x08005198                __libc_fini_array
- .text.sysconf  0x080051c0       0x1c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sysconf.o)
-                0x080051c0                sysconf
- .text.frexp    0x080051dc       0x6c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libm_a-s_frexp.o)
-                0x080051dc                frexp
+                0x080051a4       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fini.o)
+                0x080051a4                __libc_fini_array
+ .text.sysconf  0x080051cc       0x1c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sysconf.o)
+                0x080051cc                sysconf
+ .text.frexp    0x080051e8       0x6c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libm_a-s_frexp.o)
+                0x080051e8                frexp
  .text.__register_exitproc
-                0x08005248       0x80 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
-                0x08005248                __register_exitproc
- .text.quorem   0x080052c8      0x12c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-dtoa.o)
- *fill*         0x080053f4        0x4 
- .text._dtoa_r  0x080053f8      0xe80 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-dtoa.o)
-                0x080053f8                _dtoa_r
+                0x08005254       0x80 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
+                0x08005254                __register_exitproc
+ .text.quorem   0x080052d4      0x12c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-dtoa.o)
+ .text._dtoa_r  0x08005400      0xe80 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-dtoa.o)
+                0x08005400                _dtoa_r
  .text.__ascii_mbtowc
-                0x08006278       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mbtowc_r.o)
-                0x08006278                __ascii_mbtowc
- .text._Balloc  0x080062a4       0x4c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x080062a4                _Balloc
- .text._Bfree   0x080062f0       0x14 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x080062f0                _Bfree
+                0x08006280       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mbtowc_r.o)
+                0x08006280                __ascii_mbtowc
+ .text._Balloc  0x080062ac       0x4c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x080062ac                _Balloc
+ .text._Bfree   0x080062f8       0x14 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x080062f8                _Bfree
  .text.__multadd
-                0x08006304       0xa0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x08006304                __multadd
+                0x0800630c       0xa0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x0800630c                __multadd
  .text.__hi0bits
-                0x080063a4       0x44 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x080063a4                __hi0bits
+                0x080063ac       0x44 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x080063ac                __hi0bits
  .text.__lo0bits
-                0x080063e8       0x60 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x080063e8                __lo0bits
- .text.__i2b    0x08006448       0x5c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x08006448                __i2b
+                0x080063f0       0x60 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x080063f0                __lo0bits
+ .text.__i2b    0x08006450       0x5c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x08006450                __i2b
  .text.__multiply
-                0x080064a4      0x16c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x080064a4                __multiply
+                0x080064ac      0x16c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x080064ac                __multiply
  .text.__pow5mult
-                0x08006610       0xb4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x08006610                __pow5mult
+                0x08006618       0xb4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x08006618                __pow5mult
  .text.__lshift
-                0x080066c4       0xf0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x080066c4                __lshift
- .text.__mcmp   0x080067b4       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x080067b4                __mcmp
- .text.__mdiff  0x080067f4      0x178 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x080067f4                __mdiff
- .text.__d2b    0x0800696c       0xbc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x0800696c                __d2b
+                0x080066cc       0xf0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x080066cc                __lshift
+ .text.__mcmp   0x080067bc       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x080067bc                __mcmp
+ .text.__mdiff  0x080067fc      0x178 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x080067fc                __mdiff
+ .text.__d2b    0x08006974       0xbc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x08006974                __d2b
  .text._realloc_r
-                0x08006a28      0x344 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-reallocr.o)
-                0x08006a28                _realloc_r
+                0x08006a30      0x344 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-reallocr.o)
+                0x08006a30                _realloc_r
  .text.__ascii_wctomb
-                0x08006d6c       0x1c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wctomb_r.o)
-                0x08006d6c                __ascii_wctomb
+                0x08006d74       0x1c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wctomb_r.o)
+                0x08006d74                __ascii_wctomb
  .text._wcrtomb_r
-                0x08006d88       0x4c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcrtomb.o)
-                0x08006d88                _wcrtomb_r
+                0x08006d90       0x4c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcrtomb.o)
+                0x08006d90                _wcrtomb_r
  .text._wcsrtombs_r
-                0x08006dd4       0x1c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcsrtombs.o)
-                0x08006dd4                _wcsrtombs_r
+                0x08006ddc       0x1c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcsrtombs.o)
+                0x08006ddc                _wcsrtombs_r
  .text.__smakebuf_r
-                0x08006df0       0xdc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-makebuf.o)
-                0x08006df0                __smakebuf_r
+                0x08006df8       0xdc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-makebuf.o)
+                0x08006df8                __smakebuf_r
  .text._fstat_r
-                0x08006ecc       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fstatr.o)
-                0x08006ecc                _fstat_r
+                0x08006ed4       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fstatr.o)
+                0x08006ed4                _fstat_r
  .text._isatty_r
-                0x08006ef8       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-isattyr.o)
-                0x08006ef8                _isatty_r
+                0x08006f00       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-isattyr.o)
+                0x08006f00                _isatty_r
  .text.__assert_func
-                0x08006f1c       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-assert.o)
-                0x08006f1c                __assert_func
+                0x08006f24       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-assert.o)
+                0x08006f24                __assert_func
  .text._calloc_r
-                0x08006f5c       0x6c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-callocr.o)
-                0x08006f5c                _calloc_r
+                0x08006f64       0x6c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-callocr.o)
+                0x08006f64                _calloc_r
  .text._wcsnrtombs_l
-                0x08006fc8       0xec E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcsnrtombs.o)
-                0x08006fc8                _wcsnrtombs_l
+                0x08006fd0       0xec E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcsnrtombs.o)
+                0x08006fd0                _wcsnrtombs_l
  .text._wcsnrtombs_r
-                0x080070b4       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcsnrtombs.o)
-                0x080070b4                _wcsnrtombs_r
+                0x080070bc       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcsnrtombs.o)
+                0x080070bc                _wcsnrtombs_r
  .text.fiprintf
-                0x080070d8       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fiprintf.o)
-                0x080070d8                fiprintf
+                0x080070e0       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fiprintf.o)
+                0x080070e0                fiprintf
  .text._vfiprintf_r
-                0x08007100      0xe6c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
-                0x08007100                _vfiprintf_r
+                0x08007108      0xe6c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
+                0x08007108                _vfiprintf_r
  .text.__sbprintf
-                0x08007f6c       0x80 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
- .text.abort    0x08007fec       0x10 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-abort.o)
-                0x08007fec                abort
- .text.raise    0x08007ffc       0x58 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-signal.o)
-                0x08007ffc                raise
- .text._kill_r  0x08008054       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-signalr.o)
-                0x08008054                _kill_r
+                0x08007f74       0x80 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
+ .text.abort    0x08007ff4       0x10 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-abort.o)
+                0x08007ff4                abort
+ .text.raise    0x08008004       0x58 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-signal.o)
+                0x08008004                raise
+ .text._kill_r  0x0800805c       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-signalr.o)
+                0x0800805c                _kill_r
  .text._getpid_r
-                0x08008080        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-signalr.o)
-                0x08008080                _getpid_r
+                0x08008088        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-signalr.o)
+                0x08008088                _getpid_r
  *(.glue_7)
- .glue_7        0x08008084        0x0 linker stubs
+ .glue_7        0x0800808c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08008084        0x0 linker stubs
+ .glue_7t       0x0800808c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08008084        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x0800808c        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x08008084        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crti.o
-                0x08008084                _init
- .init          0x08008088        0x8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x0800808c        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crti.o
+                0x0800808c                _init
+ .init          0x08008090        0x8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x08008090        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crti.o
-                0x08008090                _fini
- .fini          0x08008094        0x8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtn.o
-                0x0800809c                        . = ALIGN (0x4)
-                0x0800809c                        _etext = .
+ .fini          0x08008098        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crti.o
+                0x08008098                _fini
+ .fini          0x0800809c        0x8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtn.o
+                0x080080a4                        . = ALIGN (0x4)
+                0x080080a4                        _etext = .
 
-.vfp11_veneer   0x0800809c        0x0
- .vfp11_veneer  0x0800809c        0x0 linker stubs
+.vfp11_veneer   0x080080a4        0x0
+ .vfp11_veneer  0x080080a4        0x0 linker stubs
 
-.v4_bx          0x0800809c        0x0
- .v4_bx         0x0800809c        0x0 linker stubs
+.v4_bx          0x080080a4        0x0
+ .v4_bx         0x080080a4        0x0 linker stubs
 
-.iplt           0x0800809c        0x0
- .iplt          0x0800809c        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x080080a4        0x0
+ .iplt          0x080080a4        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x080080a0      0x41c
-                0x080080a0                        . = ALIGN (0x4)
+.rodata         0x080080a8      0x434
+                0x080080a8                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.main.str1.4
-                0x080080a0      0x1bf CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
-                                 0x17 (size before relaxing)
- *fill*         0x0800825f        0x1 
+                0x080080a8      0x1db CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
+                                 0x31 (size before relaxing)
+ *fill*         0x08008283        0x1 
  .rodata.APBPrescTable
-                0x08008260        0x8 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
-                0x08008260                APBPrescTable
+                0x08008284        0x8 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
+                0x08008284                APBPrescTable
  .rodata.AHBPrescTable
-                0x08008268       0x10 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
-                0x08008268                AHBPrescTable
+                0x0800828c       0x10 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
+                0x0800828c                AHBPrescTable
  .rodata._vfprintf_r.str1.4
-                0x08008278       0x42 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
+                0x0800829c       0x42 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
  .rodata.zeroes.0
-                0x08008278       0x10 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
+                0x0800829c       0x10 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
  .rodata.blanks.1
-                0x08008288       0x10 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
+                0x080082ac       0x10 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
  .rodata.str1.4
-                0x08008298       0x4c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-locale.o)
+                0x080082bc       0x4c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-locale.o)
  .rodata._dtoa_r.str1.4
-                0x08008298       0x81 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-dtoa.o)
+                0x080082bc       0x81 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-dtoa.o)
  .rodata.__multadd.str1.4
-                0x08008298       0x6e E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
- .rodata.p05.0  0x08008298        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
- *fill*         0x080082a4        0x4 
+                0x080082bc       0x6e E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+ .rodata.p05.0  0x080082bc        0xc E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
  .rodata.__mprec_bigtens
-                0x080082a8       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x080082a8                __mprec_bigtens
+                0x080082c8       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x080082c8                __mprec_bigtens
  .rodata.__mprec_tens
-                0x080082d0       0xc8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
-                0x080082d0                __mprec_tens
+                0x080082f0       0xc8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+                0x080082f0                __mprec_tens
  .rodata._ctype_
-                0x08008398      0x101 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-ctype_.o)
-                0x08008398                _ctype_
+                0x080083b8      0x101 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-ctype_.o)
+                0x080083b8                _ctype_
  .rodata.__assert_func.str1.4
-                0x08008499       0x43 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-assert.o)
+                0x080084b9       0x43 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-assert.o)
  .rodata._vfiprintf_r.str1.4
-                0x08008499       0x2f E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
- *fill*         0x08008499        0x3 
+                0x080084b9       0x2f E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
+ *fill*         0x080084b9        0x3 
  .rodata.zeroes.0
-                0x0800849c       0x10 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
+                0x080084bc       0x10 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
  .rodata.blanks.1
-                0x080084ac       0x10 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
-                0x080084bc                        . = ALIGN (0x4)
+                0x080084cc       0x10 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
+                0x080084dc                        . = ALIGN (0x4)
 
-.ARM.extab      0x080084bc        0x0
-                0x080084bc                        . = ALIGN (0x4)
+.ARM.extab      0x080084dc        0x0
+                0x080084dc                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080084bc                        . = ALIGN (0x4)
+                0x080084dc                        . = ALIGN (0x4)
 
-.ARM            0x080084bc        0x8
-                0x080084bc                        . = ALIGN (0x4)
-                0x080084bc                        __exidx_start = .
+.ARM            0x080084dc        0x8
+                0x080084dc                        . = ALIGN (0x4)
+                0x080084dc                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x080084bc        0x8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memchr.o)
- .ARM.exidx     0x080084c4        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memcpy.o)
+ .ARM.exidx     0x080084dc        0x8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memchr.o)
+ .ARM.exidx     0x080084e4        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memcpy.o)
                                   0x8 (size before relaxing)
- .ARM.exidx     0x080084c4        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-strlen.o)
+ .ARM.exidx     0x080084e4        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-strlen.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__udivmoddi4
-                0x080084c4        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x080084e4        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x080084c4                        __exidx_end = .
-                0x080084c4                        . = ALIGN (0x4)
+                0x080084e4                        __exidx_end = .
+                0x080084e4                        . = ALIGN (0x4)
 
-.preinit_array  0x080084c4        0x0
-                0x080084c4                        . = ALIGN (0x4)
-                0x080084c4                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080084e4        0x0
+                0x080084e4                        . = ALIGN (0x4)
+                0x080084e4                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080084c4                        PROVIDE (__preinit_array_end = .)
-                0x080084c4                        . = ALIGN (0x4)
+                0x080084e4                        PROVIDE (__preinit_array_end = .)
+                0x080084e4                        . = ALIGN (0x4)
 
-.init_array     0x080084c4        0x8
-                0x080084c4                        . = ALIGN (0x4)
-                0x080084c4                        PROVIDE (__init_array_start = .)
+.init_array     0x080084e4        0x8
+                0x080084e4                        . = ALIGN (0x4)
+                0x080084e4                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x080084c4        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x080084e4        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x080084c8        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x080084cc                        PROVIDE (__init_array_end = .)
-                0x080084cc                        . = ALIGN (0x4)
+ .init_array    0x080084e8        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x080084ec                        PROVIDE (__init_array_end = .)
+                0x080084ec                        . = ALIGN (0x4)
 
-.fini_array     0x080084cc        0x4
-                0x080084cc                        . = ALIGN (0x4)
-                0x080084cc                        PROVIDE (__fini_array_start = .)
+.fini_array     0x080084ec        0x4
+                0x080084ec                        . = ALIGN (0x4)
+                0x080084ec                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080084cc        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x080084d0                        PROVIDE (__fini_array_end = .)
-                0x080084d0                        . = ALIGN (0x4)
-                0x080084d0                        _sidata = LOADADDR (.data)
+ .fini_array    0x080084ec        0x4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x080084f0                        PROVIDE (__fini_array_end = .)
+                0x080084f0                        . = ALIGN (0x4)
+                0x080084f0                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x080084d0        0x0
- .rel.iplt      0x080084d0        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x080084f0        0x0
+ .rel.iplt      0x080084f0        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.data           0x20000000      0x6e4 load address 0x080084d0
+.data           0x20000000      0x6e4 load address 0x080084f0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -2000,19 +1996,19 @@ LOAD E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/.
  *(.RamFunc*)
                 0x200006e4                        . = ALIGN (0x4)
                 0x200006e4                        _edata = .
-                0x08008bb4                        _siccmram = LOADADDR (.ccmram)
+                0x08008bd4                        _siccmram = LOADADDR (.ccmram)
 
 .tm_clone_table
-                0x200006e4        0x0 load address 0x08008bb4
+                0x200006e4        0x0 load address 0x08008bd4
  .tm_clone_table
                 0x200006e4        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
  .tm_clone_table
                 0x200006e4        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtend.o
 
-.igot.plt       0x200006e4        0x0 load address 0x08008bb4
+.igot.plt       0x200006e4        0x0 load address 0x08008bd4
  .igot.plt      0x200006e4        0x0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x08008bb4
+.ccmram         0x10000000        0x0 load address 0x08008bd4
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _sccmram = .
  *(.ccmram)
@@ -2267,37 +2263,37 @@ LOAD E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/.
 LOAD E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libm.a
 LOAD E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0x9003
+.debug_info     0x00000000     0x907b
  .debug_info    0x00000000      0x422 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x00000422      0x6c8 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
- .debug_info    0x00000aea      0x265 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x00000d4f      0x11c CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x00000e6b      0x789 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
- .debug_info    0x000015f4      0x171 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/sysmem.c.obj
- .debug_info    0x00001765      0x334 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_info    0x00001a99      0x9f2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x0000248b       0x30 CMakeFiles/CLion_STM32_led.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
- .debug_info    0x000024bb      0x9e2 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_info    0x00002e9d      0xff5 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x00003e92      0x704 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x00004596      0xa6d CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x00005003     0x4000 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_info    0x00000422      0x740 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00000b62      0x265 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x00000dc7      0x11c CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x00000ee3      0x789 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+ .debug_info    0x0000166c      0x171 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x000017dd      0x334 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_info    0x00001b11      0x9f2 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x00002503       0x30 CMakeFiles/CLion_STM32_led.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
+ .debug_info    0x00002533      0x9e2 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x00002f15      0xff5 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x00003f0a      0x704 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x0000460e      0xa6d CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x0000507b     0x4000 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 
-.debug_abbrev   0x00000000     0x1934
+.debug_abbrev   0x00000000     0x1937
  .debug_abbrev  0x00000000      0x164 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x00000164      0x250 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
- .debug_abbrev  0x000003b4       0xd6 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x0000048a       0x7c CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x00000506      0x1c1 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
- .debug_abbrev  0x000006c7       0xea CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/sysmem.c.obj
- .debug_abbrev  0x000007b1      0x120 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_abbrev  0x000008d1      0x276 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
- .debug_abbrev  0x00000b47       0x24 CMakeFiles/CLion_STM32_led.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
- .debug_abbrev  0x00000b6b      0x240 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_abbrev  0x00000dab      0x391 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_abbrev  0x0000113c      0x202 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_abbrev  0x0000133e      0x2c7 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_abbrev  0x00001605      0x32f CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_abbrev  0x00000164      0x253 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x000003b7       0xd6 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x0000048d       0x7c CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x00000509      0x1c1 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+ .debug_abbrev  0x000006ca       0xea CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/sysmem.c.obj
+ .debug_abbrev  0x000007b4      0x120 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_abbrev  0x000008d4      0x276 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
+ .debug_abbrev  0x00000b4a       0x24 CMakeFiles/CLion_STM32_led.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
+ .debug_abbrev  0x00000b6e      0x240 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_abbrev  0x00000dae      0x391 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_abbrev  0x0000113f      0x202 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_abbrev  0x00001341      0x2c7 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_abbrev  0x00001608      0x32f CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 
 .debug_aranges  0x00000000      0x6f0
  .debug_aranges
@@ -2360,26 +2356,26 @@ LOAD E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/.
  .debug_rnglists
                 0x00000391      0x1a1 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 
-.debug_line     0x00000000     0x701e
+.debug_line     0x00000000     0x7023
  .debug_line    0x00000000      0x251 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x00000251      0x49e CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
- .debug_line    0x000006ef      0x1cf CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x000008be      0x18b CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x00000a49      0x429 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
- .debug_line    0x00000e72      0x226 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/sysmem.c.obj
- .debug_line    0x00001098      0x296 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_line    0x0000132e      0x3e5 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
- .debug_line    0x00001713       0x7a CMakeFiles/CLion_STM32_led.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
- .debug_line    0x0000178d      0x62d CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_line    0x00001dba      0x8f0 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_line    0x000026aa      0x794 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_line    0x00002e3e      0xc5d CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_line    0x00003a9b     0x3583 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_line    0x00000251      0x4a3 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x000006f4      0x1cf CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x000008c3      0x18b CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x00000a4e      0x429 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+ .debug_line    0x00000e77      0x226 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x0000109d      0x296 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_line    0x00001333      0x3e5 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
+ .debug_line    0x00001718       0x7a CMakeFiles/CLion_STM32_led.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
+ .debug_line    0x00001792      0x62d CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_line    0x00001dbf      0x8f0 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_line    0x000026af      0x794 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_line    0x00002e43      0xc5d CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_line    0x00003aa0     0x3583 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 
 .debug_str      0x00000000     0x264c
  .debug_str     0x00000000     0x264c CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/gpio.c.obj
                                 0x3b6 (size before relaxing)
- .debug_str     0x0000264c      0x54d CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
+ .debug_str     0x0000264c      0x576 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
  .debug_str     0x0000264c      0x2f7 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_str     0x0000264c      0x26b CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_str     0x0000264c      0x435 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
@@ -2409,79 +2405,79 @@ LOAD E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/.
  .comment       0x00000045       0x46 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .comment       0x00000045       0x46 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 
-.debug_frame    0x00000000     0x267c
+.debug_frame    0x00000000     0x2680
  .debug_frame   0x00000000       0x30 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/gpio.c.obj
- .debug_frame   0x00000030       0x58 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
- .debug_frame   0x00000088       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_frame   0x000000b0       0xa8 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_frame   0x00000158      0x190 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
- .debug_frame   0x000002e8       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/sysmem.c.obj
- .debug_frame   0x00000310       0x30 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_frame   0x00000340       0x70 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
- .debug_frame   0x000003b0      0x1ec CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_frame   0x0000059c      0x214 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_frame   0x000007b0       0xd4 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_frame   0x00000884      0x16c CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_frame   0x000009f0      0x5dc CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_frame   0x00000fcc       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00000ff8       0x34 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x0000102c      0x13c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
- .debug_frame   0x00001168       0x34 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fwalk.o)
- .debug_frame   0x0000119c       0x74 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-printf.o)
- .debug_frame   0x00001210       0x8c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-stdio.o)
- .debug_frame   0x0000129c       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memset.o)
- .debug_frame   0x000012c8       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-closer.o)
- .debug_frame   0x000012f4       0x3c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-reent.o)
- .debug_frame   0x00001330       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lseekr.o)
- .debug_frame   0x0000135c       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-readr.o)
- .debug_frame   0x00001388       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-writer.o)
- .debug_frame   0x000013b4       0x20 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-errno.o)
- .debug_frame   0x000013d4       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-init.o)
- .debug_frame   0x00001400       0xb0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
- .debug_frame   0x000014b0       0x5c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
- .debug_frame   0x0000150c       0x20 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-atexit.o)
- .debug_frame   0x0000152c       0x78 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-freer.o)
- .debug_frame   0x000015a4       0x48 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mallocr.o)
- .debug_frame   0x000015ec       0x30 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mlock.o)
- .debug_frame   0x0000161c       0x88 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
- .debug_frame   0x000016a4       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sprint_r.o)
- .debug_frame   0x000016cc       0x3c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fclose.o)
- .debug_frame   0x00001708       0x70 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fflush.o)
- .debug_frame   0x00001778       0x64 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fvwrite.o)
- .debug_frame   0x000017dc       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wsetup.o)
- .debug_frame   0x00001808       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memmove.o)
- .debug_frame   0x00001848       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-strncpy.o)
- .debug_frame   0x00001870       0xe8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-locale.o)
- .debug_frame   0x00001958       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-localeconv.o)
- .debug_frame   0x00001998       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sbrkr.o)
- .debug_frame   0x000019c4       0x34 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fini.o)
- .debug_frame   0x000019f8       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sysconf.o)
- .debug_frame   0x00001a20       0x30 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libm_a-s_frexp.o)
- .debug_frame   0x00001a50       0x34 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
- .debug_frame   0x00001a84       0x84 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-dtoa.o)
- .debug_frame   0x00001b08      0x130 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mbtowc_r.o)
- .debug_frame   0x00001c38      0x270 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
- .debug_frame   0x00001ea8       0x48 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-reallocr.o)
- .debug_frame   0x00001ef0       0x8c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wctomb_r.o)
- .debug_frame   0x00001f7c       0x60 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcrtomb.o)
- .debug_frame   0x00001fdc       0x4c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcsrtombs.o)
- .debug_frame   0x00002028       0x20 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-ctype_.o)
- .debug_frame   0x00002048       0x70 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-makebuf.o)
- .debug_frame   0x000020b8       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fstatr.o)
- .debug_frame   0x000020e4       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-isattyr.o)
- .debug_frame   0x00002110       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-assert.o)
- .debug_frame   0x00002150       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-callocr.o)
- .debug_frame   0x0000217c       0x88 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcsnrtombs.o)
- .debug_frame   0x00002204       0x70 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fiprintf.o)
- .debug_frame   0x00002274       0x88 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
- .debug_frame   0x000022fc       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-abort.o)
- .debug_frame   0x00002324      0x118 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-signal.o)
- .debug_frame   0x0000243c       0x3c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-signalr.o)
- .debug_frame   0x00002478       0xac E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00002524       0x50 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00002574       0xc4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00002638       0x20 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x00002658       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x00000030       0x5c CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/main.c.obj
+ .debug_frame   0x0000008c       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_frame   0x000000b4       0xa8 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_frame   0x0000015c      0x190 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/syscalls.c.obj
+ .debug_frame   0x000002ec       0x28 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/sysmem.c.obj
+ .debug_frame   0x00000314       0x30 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_frame   0x00000344       0x70 CMakeFiles/CLion_STM32_led.elf.dir/Core/Src/usart.c.obj
+ .debug_frame   0x000003b4      0x1ec CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_frame   0x000005a0      0x214 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_frame   0x000007b4       0xd4 CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_frame   0x00000888      0x16c CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_frame   0x000009f4      0x5dc CMakeFiles/CLion_STM32_led.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_frame   0x00000fd0       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000ffc       0x34 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00001030      0x13c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-findfp.o)
+ .debug_frame   0x0000116c       0x34 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fwalk.o)
+ .debug_frame   0x000011a0       0x74 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-printf.o)
+ .debug_frame   0x00001214       0x8c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-stdio.o)
+ .debug_frame   0x000012a0       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memset.o)
+ .debug_frame   0x000012cc       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-closer.o)
+ .debug_frame   0x000012f8       0x3c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-reent.o)
+ .debug_frame   0x00001334       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lseekr.o)
+ .debug_frame   0x00001360       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-readr.o)
+ .debug_frame   0x0000138c       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-writer.o)
+ .debug_frame   0x000013b8       0x20 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-errno.o)
+ .debug_frame   0x000013d8       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-init.o)
+ .debug_frame   0x00001404       0xb0 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
+ .debug_frame   0x000014b4       0x5c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .debug_frame   0x00001510       0x20 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-atexit.o)
+ .debug_frame   0x00001530       0x78 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-freer.o)
+ .debug_frame   0x000015a8       0x48 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mallocr.o)
+ .debug_frame   0x000015f0       0x30 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mlock.o)
+ .debug_frame   0x00001620       0x88 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfprintf.o)
+ .debug_frame   0x000016a8       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sprint_r.o)
+ .debug_frame   0x000016d0       0x3c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fclose.o)
+ .debug_frame   0x0000170c       0x70 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fflush.o)
+ .debug_frame   0x0000177c       0x64 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fvwrite.o)
+ .debug_frame   0x000017e0       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wsetup.o)
+ .debug_frame   0x0000180c       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memmove.o)
+ .debug_frame   0x0000184c       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-strncpy.o)
+ .debug_frame   0x00001874       0xe8 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-locale.o)
+ .debug_frame   0x0000195c       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-localeconv.o)
+ .debug_frame   0x0000199c       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sbrkr.o)
+ .debug_frame   0x000019c8       0x34 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fini.o)
+ .debug_frame   0x000019fc       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-sysconf.o)
+ .debug_frame   0x00001a24       0x30 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libm_a-s_frexp.o)
+ .debug_frame   0x00001a54       0x34 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
+ .debug_frame   0x00001a88       0x84 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-dtoa.o)
+ .debug_frame   0x00001b0c      0x130 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mbtowc_r.o)
+ .debug_frame   0x00001c3c      0x270 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-mprec.o)
+ .debug_frame   0x00001eac       0x48 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-reallocr.o)
+ .debug_frame   0x00001ef4       0x8c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wctomb_r.o)
+ .debug_frame   0x00001f80       0x60 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcrtomb.o)
+ .debug_frame   0x00001fe0       0x4c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcsrtombs.o)
+ .debug_frame   0x0000202c       0x20 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-ctype_.o)
+ .debug_frame   0x0000204c       0x70 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-makebuf.o)
+ .debug_frame   0x000020bc       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fstatr.o)
+ .debug_frame   0x000020e8       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-isattyr.o)
+ .debug_frame   0x00002114       0x40 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-assert.o)
+ .debug_frame   0x00002154       0x2c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-callocr.o)
+ .debug_frame   0x00002180       0x88 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-wcsnrtombs.o)
+ .debug_frame   0x00002208       0x70 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fiprintf.o)
+ .debug_frame   0x00002278       0x88 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-vfiprintf.o)
+ .debug_frame   0x00002300       0x28 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-abort.o)
+ .debug_frame   0x00002328      0x118 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-signal.o)
+ .debug_frame   0x00002440       0x3c E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-signalr.o)
+ .debug_frame   0x0000247c       0xac E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00002528       0x50 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00002578       0xc4 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x0000263c       0x20 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x0000265c       0x24 E:/Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixdfsi.o)
 
 .debug_loclists
                 0x00000000     0x3f40
